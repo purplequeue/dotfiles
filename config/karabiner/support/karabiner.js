@@ -197,7 +197,7 @@ const PARAMETERS_DEFAULT = {
   "basic.to_if_alone_timeout_milliseconds": 500,
 };
 
-const COMPLEX_RULES_DEFAULT = [CAPS_CONTROL_ESC_RULE, CAPS_LOCK_TOGGLE_RULE];
+const COMPLEX_RULES_DEFAULT = [CAPS_LOCK_TOGGLE_RULE];
 
 /* Profiles */
 
@@ -215,6 +215,7 @@ const DEFAULT_PROFILE = {
     },
     rules: [
       ...COMPLEX_RULES_DEFAULT,
+      CAPS_CONTROL_ESC_RULE,
       {
         description: "HyperSpace Layer",
         manipulators: [
@@ -234,6 +235,7 @@ const DEFAULT_PROFILE = {
 
 const GAMING_PROFILE = {
   ...VANILLA_PROFILE,
+  simple_modifications: [fromTo("caps_lock", "left_control")],
   complex_modifications: {
     parameters: {
       ...PARAMETERS_DEFAULT,
