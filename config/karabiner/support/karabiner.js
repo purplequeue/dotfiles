@@ -207,7 +207,7 @@ const VANILLA_PROFILE = {
   simple_modifications: [],
 };
 
-const DEFAULT_PROFILE = {
+const HYPER_PROFILE = {
   ...VANILLA_PROFILE,
   complex_modifications: {
     parameters: {
@@ -254,7 +254,7 @@ const CONFIG = {
     show_in_menu_bar: true,
     show_profile_name_in_menu_bar: true,
   },
-  profiles: [VANILLA_PROFILE, DEFAULT_PROFILE, GAMING_PROFILE],
+  profiles: [VANILLA_PROFILE, HYPER_PROFILE, GAMING_PROFILE],
 };
 
 if (process.argv.includes("--out")) {
