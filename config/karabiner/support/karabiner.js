@@ -224,6 +224,8 @@ const HYPER_PROFILE = {
           ...hyperSpaceFromTo("h", "left_arrow"),
           ...hyperSpaceFromTo("k", "up_arrow"),
           ...hyperSpaceShortcut("d"), // Hyper + D to toggle mute/unmute on Discord
+          ...hyperSpaceShortcut("t"), // Hyper + T to show Todoist
+          ...hyperSpaceShortcut("a"), // Hyper + A to quick add task to Todoist
         ],
       },
     ],
